@@ -74,7 +74,7 @@ This project uses **Laravel Policies** to control access to posts and user-relat
 
 ---
 
-## 🧪 API Testing
+##  API Testing
 
 All APIs are tested using **Postman**.
 
@@ -87,7 +87,7 @@ Environment variables used:
 - `password`
 
 ---
-##  Installation
+## Installation
 
 -git clone <repo-url>
 -cd project-folder
