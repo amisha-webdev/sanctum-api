@@ -1,0 +1,435 @@
+{
+  "info": {
+    "_postman_id": "50daa6ea-326a-48e3-978c-46b3cb0b54bc",
+    "name": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51437377",
+    "_collection_link": "https://go.postman.co/collection/51437377-50daa6ea-326a-48e3-978c-46b3cb0b54bc?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Api",
+      "item": [
+        {
+          "name": "RegisterUser",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "Amisha",
+                  "type": "text",
+                  "uuid": "1f6a23c0-5a9e-4529-a477-159ad094c674"
+                },
+                {
+                  "key": "email",
+                  "value": "{{email}}",
+                  "type": "text",
+                  "uuid": "487ae384-c2f5-4990-bb8b-de9e16a180e0"
+                },
+                {
+                  "key": "password",
+                  "value": "{{password}}",
+                  "type": "text",
+                  "uuid": "91b60136-7895-4c44-8ea6-d9132edb49c6"
+                },
+                {
+                  "key": "address",
+                  "value": "Lucknow",
+                  "type": "text",
+                  "uuid": "c43192aa-01f7-4a6c-a77d-b671138d5ed0"
+                },
+                {
+                  "key": "phone",
+                  "value": "7879890986",
+                  "type": "text",
+                  "uuid": "43088092-2999-497c-b593-251650c7795c"
+                },
+                {
+                  "key": "profile_img",
+                  "type": "file",
+                  "uuid": "e7ecda41-f849-4006-aeb0-aa6be87c60d5",
+                  "src": "/E:/Images/images/article-ph-1.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{api_url}}/api/signUp",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "signUp"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "LoginUser",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "{{email}}",
+                  "type": "text",
+                  "uuid": "487ae384-c2f5-4990-bb8b-de9e16a180e0"
+                },
+                {
+                  "key": "password",
+                  "value": "{{password}}",
+                  "type": "text",
+                  "uuid": "91b60136-7895-4c44-8ea6-d9132edb49c6"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{api_url}}/api/login",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetProfile",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{api_url}}/api/user/profile",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "profile"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateProfile",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "Amisha",
+                  "type": "text",
+                  "uuid": "a0f65e41-14de-4a3f-89fd-7fe23ecbe55c"
+                },
+                {
+                  "key": "email",
+                  "value": "{{email}}",
+                  "type": "text",
+                  "uuid": "3177afac-8fbc-4043-ba31-e3aba31a96c1"
+                },
+                {
+                  "key": "password",
+                  "value": "{{password}}",
+                  "type": "text",
+                  "uuid": "8507667e-f819-4dde-a43e-c754f72c428c"
+                },
+                {
+                  "key": "address",
+                  "value": "Deoria",
+                  "type": "text",
+                  "uuid": "3edfa5a6-fd05-40e7-b09a-32d1c48f3ddf"
+                },
+                {
+                  "key": "phone",
+                  "value": "7876567876",
+                  "type": "text",
+                  "uuid": "0b5a0b1d-1af9-48c9-92f4-10ab7d790f3c"
+                },
+                {
+                  "key": "profile_img",
+                  "type": "file",
+                  "uuid": "4874cd98-755b-4d30-b5fb-8c3ff03443dd",
+                  "src": "ph-1.png"
+                },
+                {
+                  "key": "_method",
+                  "value": "PUT",
+                  "type": "text",
+                  "uuid": "7631cd51-17e1-4e0e-bdab-0de262754100"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{api_url}}/api/user/profile/update",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "profile",
+                "update"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "LogoutUser",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{api_url}}/api/user/logout",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPost Data",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{api_url}}/api/user/posts",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "posts"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdatePost Data",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "New Post",
+                  "type": "text",
+                  "uuid": "37add020-49dc-4537-b36d-eaa0406d68e0"
+                },
+                {
+                  "key": "description",
+                  "value": "New Description",
+                  "type": "text",
+                  "uuid": "f876a329-9d52-4aa7-b54f-ffa1c1f847c3"
+                },
+                {
+                  "key": "post_img",
+                  "type": "file",
+                  "uuid": "1066a86a-0361-4c8c-9663-18b7aba5fa1d",
+                  "src": "article-ph-3.png",
+                  "disabled": true
+                },
+                {
+                  "key": "_method",
+                  "value": "PUT",
+                  "type": "text",
+                  "uuid": "39e99f42-7c96-4099-a7b6-0055be134d64"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{api_url}}/api/user/posts/1",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "posts",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeletePost",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{api_url}}/api/user/posts/1",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "posts",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost Data",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "Post title7",
+                  "type": "text",
+                  "uuid": "28046824-cd4c-4d07-b4fd-1f1bfe9c2688"
+                },
+                {
+                  "key": "description",
+                  "value": "Post Description 7",
+                  "type": "text",
+                  "uuid": "26bf9131-8d4a-4a2a-a613-777e51eb502e"
+                },
+                {
+                  "key": "post_image",
+                  "type": "file",
+                  "uuid": "0314fe1a-fd53-48bf-b9fc-758dd3cb5115",
+                  "src": "/E:/Images/images/article-ph-2.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{api_url}}/api/user/posts",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "posts"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
