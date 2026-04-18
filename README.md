@@ -87,21 +87,21 @@ Environment variables used:
 - `password`
 
 ---
-## ⚙️ Installation
+##  Installation
 
-git clone <repo-url>
-cd project-folder
-composer install
-cp .env.example .env
-php artisan key:generate
-php artisan migrate
-php artisan serve
+-git clone <repo-url>
+-cd project-folder
+-composer install
+-cp .env.example .env
+-php artisan key:generate
+-php artisan migrate
+-php artisan serve
 
  Notes
-Ensure .env file is properly configured
-Sanctum should be installed and configured
-Policies are registered in AuthServiceProvider
-Use Postman for API testing
+-Ensure .env file is properly configured
+-Sanctum should be installed and configured
+-Policies are registered in AuthServiceProvider
+-Use Postman for API testing
 
  Author
-Developed by Amisha Gupta
+--Developed by Amisha Gupta
